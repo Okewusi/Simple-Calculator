@@ -30,7 +30,7 @@ numbersElement.forEach(number =>{
 // This displays the operation clicked on the screen, makes sure you can not perfom an operation except there is a number to perform the operation on else it displays the current number  on screen as the result
 operationsElement.forEach(operation =>{
     operation.addEventListener('click',(e)=>{
-        if(!display2Num) result;
+        if(!display2Num) return;
         haveDot = false;
         const operationName = e.target.innerText;
         if(display1Num && display2Num && lastOperation){
